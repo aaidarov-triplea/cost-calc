@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #7c7c7c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 50px 0;
+    gap: 20px;
+}
+.income,
+.expenses,
+.total-list {
+    background-color: #262e2c;
+    border-radius: 15px;
+    padding: 40px;
+    color: #fff;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
+}
+.total-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.total-list > div > span:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+.income h2,
+.expenses h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.income p,
+.expenses p {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.income-details input,
+.expenses-details input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #7c7c7c;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+.income-details input::placeholder,
+.expenses-details input::placeholder {
+    font-style: italic;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #7c7c7c;
+    color: #fff;
+    font-weight: 500;
+}
+.income-list,
+.expenses-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.income-item,
+.expense-item,
+.income-total,
+.expenses-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#total-amount,
+#total-expense {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.total-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    width: 100%;
+}

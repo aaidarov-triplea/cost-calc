@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расчет расходов</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="income">
+          <h2>Доход</h2>
+          <p>Укажите все возможные доходы</p>
+          <form class="income-details">
+            <input
+              type="text"
+              placeholder="Введите наименование"
+              id="income-name"
+            />
+            <input type="text" placeholder="сумма дохода" id="income-amount" />
+            <button type="button" class="btn" id="income-btn">Добавить</button>
+          </form>
+          <div class="income-list" id="income-list"></div>
+          <div class="income-total">
+            <span>Итого: </span><strong id="total-amount">0 ⃀</strong>
+          </div>
+        </div>
+        <div class="expenses">
+          <h2>Расходы</h2>
+          <p>Укажите все возможные расходы</p>
+          <form class="expenses-details">
+            <input
+              type="text"
+              placeholder="Введите наименование"
+              id="expense-name"
+            />
+            <input
+              type="text"
+              placeholder="сумма расхода"
+              id="expense-amount"
+            />
+            <button class="btn" type="button" id="expense-btn">Добавить</button>
+          </form>
+          <div class="expenses-list" id="expense-list"></div>
+          <div class="expenses-total">
+            <span>Итого: </span><strong id="total-expense">0 ⃀</strong>
+          </div>
+        </div>
+        <div class="total-list">
+          <div class="total-item">
+            <span>Итого дахода в месяц:</span>
+            <span id="total-amounts">0 ⃀</span>
+          </div>
+          <div class="total-item">
+            <span>Итого расхода в месяц:</span>
+            <span id="total-expenses">0 ⃀</span>
+          </div>
+          <div class="total-item">
+            <span>Остаток:</span>
+            <span id="total">0 ⃀</span>
+            <button class="btn" type="button" id="total-btn">Итого</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
