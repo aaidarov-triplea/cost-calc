@@ -22,7 +22,7 @@ export const getIncome = () => {
       const incomeItem = document.createElement("div");
       incomeItem.classList.add("income-item");
       incomeItem.innerHTML = `
-        <span>Наименование: <strong>${name}</strong></span>
+        <span><strong>${name}</strong></span>
         <span>Сумма: <strong>${amount} ⃀</strong></span>
       `;
 
@@ -68,7 +68,7 @@ export const getIncome = () => {
           const incomeItem = document.createElement("div");
           incomeItem.classList.add("income-item");
           incomeItem.innerHTML = `
-            <span>Наименование: <strong>${income.name}</strong></span>
+            <span><strong>${income.name}</strong></span>
             <span>Сумма: <strong>${income.amount} ⃀</strong></span>
           `;
 

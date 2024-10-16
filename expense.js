@@ -23,7 +23,7 @@ export const getExpenses = () => {
       const expenseItem = document.createElement("div");
       expenseItem.classList.add("expense-item");
       expenseItem.innerHTML = `
-        <span>Наименование: <strong>${expenseName}</strong></span>
+        <span><strong>${expenseName}</strong></span>
         <span>Сумма: <strong>${expense} ⃀</strong></span>
       `;
 
@@ -69,7 +69,7 @@ export const getExpenses = () => {
           const expenseItem = document.createElement("div");
           expenseItem.classList.add("expense-item");
           expenseItem.innerHTML = `
-            <span>Наименование: <strong>${expense.name}</strong></span>
+            <span><strong>${expense.name}</strong></span>
             <span>Сумма: <strong>${expense.amount} ⃀</strong></span>
           `;
 
